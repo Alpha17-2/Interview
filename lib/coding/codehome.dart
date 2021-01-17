@@ -51,7 +51,7 @@ class codehome extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15.0)),
                 child: Container(
                   height: displayHeight(context) * 0.12,
-                  width: displayWidth(context) * 0.31,
+                  width: displayWidth(context) * 0.33,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15.0),
@@ -74,11 +74,11 @@ class codehome extends StatelessWidget {
                 ),
               ),
             ),
-            top: displayHeight(context) * 0.2,
-            left: displayWidth(context) * 0.04,
+            top: displayHeight(context) * 0.15,
+            left: displayWidth(context) * 0.036,
           ),
           Positioned(
-            top: displayHeight(context) * 0.19,
+            top: displayHeight(context) * 0.16,
             left: displayWidth(context) * 0.04,
             child: Image(
               image: AssetImage("images/b2.png"),
@@ -137,7 +137,7 @@ class codehome extends StatelessWidget {
             ),
           ),
           Positioned(
-            // Third box -> DBMS
+            // Third box -> DP
             child: Card(
               elevation: 15.0,
               shape: RoundedRectangleBorder(
@@ -145,7 +145,7 @@ class codehome extends StatelessWidget {
               ),
               child: Container(
                 height: displayHeight(context) * 0.22,
-                width: displayWidth(context) * 0.4,
+                width: displayWidth(context) * 0.42,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(15.0),
@@ -171,7 +171,7 @@ class codehome extends StatelessWidget {
                 ),
               ),
             ),
-            top: displayHeight(context) * 0.43,
+            top: displayHeight(context) * 0.41,
             right: displayWidth(context) * 0.06,
           ),
           Positioned(
@@ -222,11 +222,11 @@ class codehome extends StatelessWidget {
                 ),
               ),
             ),
-            top: displayHeight(context) * 0.42,
+            top: displayHeight(context) * 0.34,
             left: displayWidth(context) * 0.04,
           ),
           Positioned(
-            top: displayHeight(context) * 0.37,
+            top: displayHeight(context) * 0.3,
             left: displayWidth(context) * 0.04,
             child: Image(
               image: AssetImage("images/b6.png"),
