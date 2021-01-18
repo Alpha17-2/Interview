@@ -98,7 +98,7 @@ class codehome extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15.0),
                 ),
                 child: Container(
-                  height: displayHeight(context) * 0.17,
+                  height: displayHeight(context) * 0.15,
                   width: displayWidth(context) * 0.5,
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -125,11 +125,11 @@ class codehome extends StatelessWidget {
                 ),
               ),
             ),
-            top: displayHeight(context) * 0.2,
+            top: displayHeight(context) * 0.17,
             right: displayWidth(context) * 0.04,
           ),
           Positioned(
-            top: displayHeight(context) * 0.145,
+            top: displayHeight(context) * 0.118,
             right: displayWidth(context) * 0.12,
             child: Image(
               image: AssetImage("images/b1.png"),
@@ -171,11 +171,11 @@ class codehome extends StatelessWidget {
                 ),
               ),
             ),
-            top: displayHeight(context) * 0.41,
+            top: displayHeight(context) * 0.36,
             right: displayWidth(context) * 0.06,
           ),
           Positioned(
-            top: displayHeight(context) * 0.38,
+            top: displayHeight(context) * 0.34,
             right: 0,
             child: Image(
               image: AssetImage("images/b4.png"),
@@ -184,7 +184,7 @@ class codehome extends StatelessWidget {
           ),
           // Fourth box
           Positioned(
-            // First box -> String
+            // Fourth box -> Stack
             child: GestureDetector(
               onTap: () {
                 Navigator.push(
@@ -231,6 +231,55 @@ class codehome extends StatelessWidget {
             child: Image(
               image: AssetImage("images/b6.png"),
               height: displayHeight(context) * 0.15,
+            ),
+          ),
+
+          Positioned(
+            // First box -> String
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => st()));
+              },
+              child: Card(
+                elevation: 15.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15.0)),
+                child: Container(
+                  height: displayHeight(context) * 0.15,
+                  width: displayWidth(context) * 0.422,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Text(
+                        "Linked List",
+                        style: TextStyle(
+                            fontSize: displayWidth(context) * 0.0425,
+                            fontWeight: FontWeight.w500),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            top: displayHeight(context) * 0.6,
+            left: displayWidth(context) * 0.02,
+          ),
+          Positioned(
+            top: displayHeight(context) * 0.56,
+            left: 0,
+            child: Image(
+              image: AssetImage("images/b77.png"),
+              height: displayHeight(context) * 0.11,
             ),
           ),
         ],
