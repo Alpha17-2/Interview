@@ -1,10 +1,19 @@
 import 'package:Interview/coding/codehome.dart';
 import 'package:flutter/material.dart';
 import 'package:Interview/Helper/DeviceSize.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Future<void> _launchinBrowser(String url) async {
+      if (await canLaunch(url)) {
+        await launch(url, forceWebView: false, forceSafariVC: false);
+      } else {
+        throw 'Could not launch';
+      }
+    }
+
     return Scaffold(
       body: Stack(
         alignment: Alignment.center,
@@ -142,30 +151,36 @@ class home extends StatelessWidget {
           // 2nd Box
           Positioned(
             // Second box -> Operating System
-            child: Container(
-              height: displayHeight(context) * 0.18,
-              width: displayWidth(context) * 0.4,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15.0),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Opacity(opacity: 0.0, child: Divider()),
-                  Opacity(opacity: 0.0, child: Divider()),
-                  Opacity(opacity: 0.0, child: Divider()),
-                  Opacity(opacity: 0.0, child: Divider()),
-                  Opacity(opacity: 0.0, child: Divider()),
-                  Text(
-                    "Operating\nSystem",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: displayWidth(context) * 0.0425,
-                        fontWeight: FontWeight.w500),
-                  )
-                ],
+            child: GestureDetector(
+              onTap: () {
+                _launchinBrowser(
+                    "https://www.youtube.com/watch?v=YwqexcfbucE&list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD");
+              },
+              child: Container(
+                height: displayHeight(context) * 0.18,
+                width: displayWidth(context) * 0.4,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Opacity(opacity: 0.0, child: Divider()),
+                    Opacity(opacity: 0.0, child: Divider()),
+                    Opacity(opacity: 0.0, child: Divider()),
+                    Opacity(opacity: 0.0, child: Divider()),
+                    Opacity(opacity: 0.0, child: Divider()),
+                    Text(
+                      "Operating\nSystem",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: displayWidth(context) * 0.0425,
+                          fontWeight: FontWeight.w500),
+                    )
+                  ],
+                ),
               ),
             ),
             top: displayHeight(context) * 0.2,
