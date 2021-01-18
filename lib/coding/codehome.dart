@@ -282,6 +282,157 @@ class codehome extends StatelessWidget {
               height: displayHeight(context) * 0.11,
             ),
           ),
+
+          // Graph Box
+          Positioned(
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => st()));
+              },
+              child: Card(
+                elevation: 15.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15.0)),
+                child: Container(
+                  height: displayHeight(context) * 0.15,
+                  width: displayWidth(context) * 0.422,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Text(
+                        "Graph",
+                        style: TextStyle(
+                            fontSize: displayWidth(context) * 0.0425,
+                            fontWeight: FontWeight.w500),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            top: displayHeight(context) * 0.8,
+            left: displayWidth(context) * 0.02,
+          ),
+          Positioned(
+            top: displayHeight(context) * 0.78,
+            left: displayWidth(context) * 0.04,
+            child: Image(
+              image: AssetImage("images/b5.png"),
+              height: displayHeight(context) * 0.1,
+            ),
+          ),
+          // Tree
+
+          Positioned(
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => st()));
+              },
+              child: Card(
+                elevation: 15.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15.0)),
+                child: Container(
+                  height: displayHeight(context) * 0.15,
+                  width: displayWidth(context) * 0.422,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Text(
+                        "Tree",
+                        style: TextStyle(
+                            fontSize: displayWidth(context) * 0.0425,
+                            fontWeight: FontWeight.w500),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            top: displayHeight(context) * 0.8,
+            right: displayWidth(context) * 0.02,
+          ),
+          Positioned(
+            top: displayHeight(context) * 0.76,
+            right: displayWidth(context) * 0.1,
+            child: Image(
+              image: AssetImage("images/b8.png"),
+              height: displayHeight(context) * 0.14,
+            ),
+          ),
+
+          // Greedy Alorithms
+
+          Positioned(
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => st()));
+              },
+              child: Card(
+                elevation: 15.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15.0)),
+                child: Container(
+                  height: displayHeight(context) * 0.15,
+                  width: displayWidth(context) * 0.422,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Opacity(opacity: 0.0, child: Divider()),
+                      Text(
+                        "Greedy",
+                        style: TextStyle(
+                            fontSize: displayWidth(context) * 0.0425,
+                            fontWeight: FontWeight.w500),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            top: displayHeight(context) * 0.62,
+            right: displayWidth(context) * 0.02,
+          ),
+          Positioned(
+            top: displayHeight(context) * 0.6,
+            right: displayWidth(context) * 0.1,
+            child: Image(
+              image: AssetImage("images/b9.png"),
+              height: displayHeight(context) * 0.11,
+            ),
+          ),
         ],
       ),
     );
